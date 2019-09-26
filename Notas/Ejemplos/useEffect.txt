@@ -1,0 +1,25 @@
+useEffect()
+
+1)
+useEffect(()=>{
+    () => { return value }
+})
+
+useEffect will be called every
+time a component renders
+
+2)
+useEffect(()=>{
+    () => { return value }
+}, [])
+
+useEffect will be called when
+the component mounts
+
+3)
+useEffect(()=>{
+    () => { return value }
+}, [state.value])
+
+useEffect will be called when
+state.value changes

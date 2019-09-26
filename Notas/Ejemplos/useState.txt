@@ -1,0 +1,20 @@
+useState()
+
+const [value, setValue] = useState(initialState)
+
+[state value, set state function]
+
+Set State: setValue(value +1)
+Read State: <p> {value} </p> in render method.
+
+Component re-renders automatically when state changes.
+
+Variables Names are user defined.
+
+Without Array destructuring:
+const value = useState(0)[0]
+const setValue = useState(0)[1]
+
+Multiple Properties:
+const [value, setValue] = useState(initialState)
+const [value2, setValue2] = useState(initialState)

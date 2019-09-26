@@ -1,0 +1,28 @@
+Rules of Using Hooks
+
+1)  No nested hooks calls
+
+Wrong:
+if(true) {useEffect(()=>{return value})}
+
+Right:
+useEffect(()=> true ? return value : null)
+
+Main Hooks Overview
+
+- useState()
+Similar to this.setState()
+Updates local component state.
+
+- useEffect()
+Similar to componentDidMount()
+Use when you want to call function automatically.
+
+- useContext()
+Similar to react-redux.
+Allows you to access and update the global context state through the React context API.
+
+- useReducer()
+Similar to react-redux.
+Allows you update the local component state through redux actions and reducers.
+DOES NOT update state globally by itself.
